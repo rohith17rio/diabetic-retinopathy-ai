@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1729">
+    <title>New Screening | RetinaCare AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-icon">R</span>
+                <span>
+                    <strong>RetinaCare AI</strong>
+                    <small>AI SCREENING PLATFORM</small>
+                </span>
+            </a>
+
+            <p class="nav-heading">WORKSPACE</p>
+            <nav class="navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="dashboard.html">New Screening</a>
+                <a class="nav-link" href="results.html">Latest Results</a>
+                <a class="nav-link" href="about.html">About</a>
+            </nav>
+
+            <div class="sidebar-note">
+                <span class="status-dot"></span>
+                <strong>Research prototype</strong>
+                <p>AI predictions require professional clinical interpretation.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">RETINAL HEALTH WORKSPACE</p>
+                    <h1>New Screening</h1>
+                    <p class="muted-text">Upload a fundus image to begin an AI-assisted analysis.</p>
+                </div>
+                <div class="user-profile">
+                    <span class="avatar">AI</span>
+                    <span>
+                        <strong>Screening Portal</strong>
+                        <small>Local prototype</small>
+                    </span>
+                </div>
+            </header>
+
+            <section class="welcome-panel compact-hero">
+                <div>
+                    <p class="eyebrow">AI-ASSISTED ANALYSIS</p>
+                    <h2>Turn retinal images into screening insights.</h2>
+                    <p>Submit a retinal fundus photograph and review the model's prediction.</p>
+                </div>
+                <div class="hero-symbol" aria-hidden="true">◎</div>
+            </section>
+
+            <section class="info-grid">
+                <article class="info-card">
+                    <span class="card-label">AI MODEL</span>
+                    <h3>ResNet-18</h3>
+                    <p>Fine-tuned image classifier</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-label">OUTPUT GRADES</span>
+                    <h3>0–4</h3>
+                    <p>Five severity categories</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-label">INPUT FORMAT</span>
+                    <h3>JPG / PNG</h3>
+                    <p>Maximum file size: 10 MB</p>
+                </article>
+            </section>
+
+            <section class="panel">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">STEP 01</p>
+                        <h2>Upload retinal image</h2>
+                        <p class="muted-text">Use a fundus photograph, not an ordinary eye selfie.</p>
+                    </div>
+                </div>
+
+                <form id="screening-form">
+                    <label class="upload-zone" id="upload-zone" for="retinal-image">
+                        <span class="upload-icon">↑</span>
+                        <strong>Choose a retinal image</strong>
+                        <span>Click to browse your device</span>
+                        <span class="file-hint">PNG, JPG or JPEG · Up to 10 MB</span>
+                        <input
+                            type="file"
+                            id="retinal-image"
+                            name="image"
+                            accept=".png,.jpg,.jpeg,image/png,image/jpeg"
+                            required
+                        >
+                    </label>
+
+                    <div class="image-preview" id="image-preview" hidden>
+                        <img id="preview-image" alt="Selected retinal fundus image">
+                        <div class="preview-details">
+                            <strong id="file-name"></strong>
+                            <p id="file-details" class="muted-text"></p>
+                            <button type="button" id="remove-image" class="text-button">
+                                Remove image
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="quality-note">
+                        <strong>Before you continue</strong>
+                        <p>Choose a clear retinal fundus image. Image preview and file checks do not guarantee clinical image quality.</p>
+                    </div>
+
+                    <div class="form-footer">
+                        <p id="upload-message" class="muted-text" role="status" aria-live="polite">
+                            No image selected.
+                        </p>
+                        <button type="submit" id="analyze-button" class="primary-button">
+                            Analyze Image <span>→</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="page-footer">
+                AI-assisted screening only · Not a definitive diagnosis
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/screening.js"></script>
+</body>
+</html>

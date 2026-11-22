@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1729">
+    <title>About | RetinaCare AI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="about-page">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-icon">R</span>
+                <span>
+                    <strong>RetinaCare AI</strong>
+                    <small>AI SCREENING PLATFORM</small>
+                </span>
+            </a>
+
+            <p class="nav-heading">WORKSPACE</p>
+            <nav class="navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="dashboard.html">New Screening</a>
+                <a class="nav-link" href="results.html">Latest Results</a>
+                <a class="nav-link active" href="about.html">About</a>
+            </nav>
+
+            <div class="sidebar-note">
+                <span class="status-dot"></span>
+                <strong>Research prototype</strong>
+                <p>AI predictions require professional clinical interpretation.</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section class="about-hero">
+                <div>
+                    <p class="eyebrow">ABOUT THE PROJECT</p>
+                    <h1>Explainable AI for Diabetic Retinopathy Screening in Rural Areas</h1>
+                    <p>A clear, responsible guide to diabetic retinopathy, retinal screening grades, healthy habits, and the role of AI as screening support.</p>
+                </div>
+                <div class="about-hero-mark" aria-hidden="true">◎</div>
+            </section>
+
+            <section class="about-intro-grid">
+                <article class="about-card">
+                    <p class="eyebrow">WHAT IS DIABETIC RETINOPATHY?</p>
+                    <h2>Protecting the retina from diabetes-related damage</h2>
+                    <p>Diabetic retinopathy is an eye condition caused by damage to the blood vessels in the retina due to diabetes. It can gradually affect vision and may lead to severe vision loss if not identified and managed in time.</p>
+                </article>
+                <article class="about-card">
+                    <p class="eyebrow">WHY EARLY SCREENING MATTERS</p>
+                    <h2>Early changes may not cause symptoms</h2>
+                    <p>Many people with diabetes may not notice eye damage during the early stages. Regular retinal examinations can help identify possible problems before serious vision loss occurs.</p>
+                </article>
+                <article class="about-card">
+                    <p class="eyebrow">OUR MISSION</p>
+                    <h2>Support care where access is limited</h2>
+                    <p>Our goal is to support early screening, assist healthcare workers in rural and underserved areas, and help identify patients who may need further examination by an eye-care professional.</p>
+                </article>
+                <article class="about-card">
+                    <p class="eyebrow">HOW THE SYSTEM WORKS</p>
+                    <h2>The current screening workflow</h2>
+                    <ol class="workflow-list">
+                        <li>A retinal fundus image is uploaded.</li>
+                        <li>The system checks basic image requirements and processes the image.</li>
+                        <li>The AI model predicts a diabetic retinopathy severity grade from 0 to 4.</li>
+                        <li>The result and available Grad-CAM explanation are presented for review.</li>
+                        <li>Patients who may be at risk are advised to seek professional eye-care assessment.</li>
+                    </ol>
+                </article>
+            </section>
+
+            <header class="grades-heading">
+                <p class="eyebrow">DIABETIC RETINOPATHY GRADES</p>
+                <h2>Understanding Grades 0–4</h2>
+                <p class="muted-text">The cards provide general education. They do not diagnose an individual or replace an ophthalmologist's examination.</p>
+            </header>
+
+            <article class="grade-card">
+                <figure class="grade-image">
+                    <img src="assets/about/grade-0.png" alt="Project training fundus image labelled Grade 0">
+                    <figcaption>Grade 0 example from the project's labelled retinal training dataset.</figcaption>
+                </figure>
+                <div class="grade-copy">
+                    <div class="grade-badge"><span>0</span> NO APPARENT DIABETIC RETINOPATHY</div>
+                    <h3>No visible signs detected in the image</h3>
+                    <p>No visible signs of diabetic retinopathy may be detected in the retinal image.</p>
+                    <h4>What may be seen</h4>
+                    <p>A complete clinical examination may show no apparent diabetic changes. Disease can still develop, and an image or AI prediction cannot assess the whole eye.</p>
+                    <h4>Symptoms and next steps</h4>
+                    <p>Early disease often causes no symptoms. Maintain regular diabetic eye examinations and follow the schedule advised by a qualified eye-care professional.</p>
+                    <h4>Daily health guidance</h4>
+                    <p>Keep blood sugar and blood pressure within targets advised by your healthcare professional. Follow a balanced diet, remain physically active when medically suitable, avoid smoking, and take prescribed medicines as directed.</p>
+                    <div class="grade-notice">A Grade 0 prediction does not guarantee that the eyes are healthy or that future disease cannot develop.</div>
+                </div>
+            </article>
+
+            <article class="grade-card">
+                <figure class="grade-image">
+                    <img src="assets/about/grade-1.png" alt="Project training fundus image labelled Grade 1">
+                    <figcaption>Grade 1 example from the project's labelled retinal training dataset.</figcaption>
+                </figure>
+                <div class="grade-copy">
+                    <div class="grade-badge"><span>1</span> MILD NPDR</div>
+                    <h3>Mild non-proliferative diabetic retinopathy</h3>
+                    <p>Mild disease may show small retinal changes, particularly microaneurysms, which are tiny bulges in retinal blood vessels.</p>
+                    <h4>Symptoms and follow-up</h4>
+                    <p>Vision may remain normal, especially in early disease. Regular eye examinations remain important because changes can progress before symptoms appear.</p>
+                    <h4>Health guidance</h4>
+                    <p>Manage blood glucose, blood pressure, and cholesterol as advised by a healthcare professional. Eat a varied balanced diet and follow suitable physical activity guidance.</p>
+                    <div class="grade-notice">No particular food, supplement, or home remedy has been shown to reverse retinal damage. Follow the eye-care professional's review schedule.</div>
+                </div>
+            </article>
+
+            <article class="grade-card">
+                <figure class="grade-image">
+                    <img src="assets/about/grade-2.png" alt="Project training fundus image labelled Grade 2">
+                    <figcaption>Grade 2 example from the project's labelled retinal training dataset.</figcaption>
+                </figure>
+                <div class="grade-copy">
+                    <div class="grade-badge"><span>2</span> MODERATE NPDR</div>
+                    <h3>Moderate non-proliferative diabetic retinopathy</h3>
+                    <p>Moderate disease may involve more retinal blood vessel abnormalities, including microaneurysms, haemorrhages, and other changes.</p>
+                    <h4>Symptoms and follow-up</h4>
+                    <p>Some people still have no noticeable symptoms. An eye-care professional should determine the examination schedule and whether further tests or treatment are needed.</p>
+                    <h4>Health guidance</h4>
+                    <p>Continue medically appropriate diabetes management, balanced eating, physical activity, smoking avoidance, and regular monitoring. Dietary changes support general health but cannot cure existing eye disease.</p>
+                    <div class="grade-notice">Seek prompt professional assessment if vision changes, even if an earlier image showed a lower grade.</div>
+                </div>
+            </article>
+
+            <article class="grade-card">
+                <figure class="grade-image">
+                    <img src="assets/about/grade-3.png" alt="Project training fundus image labelled Grade 3">
+                    <figcaption>Grade 3 example from the project's labelled retinal training dataset.</figcaption>
+                </figure>
+                <div class="grade-copy">
+                    <div class="grade-badge"><span>3</span> SEVERE NPDR</div>
+                    <h3>Severe non-proliferative diabetic retinopathy</h3>
+                    <p>Severe disease involves extensive retinal blood vessel abnormalities and may progress to more advanced disease.</p>
+                    <h4>Symptoms and specialist care</h4>
+                    <p>Vision may seem unchanged or may become affected. Prompt assessment by an ophthalmologist is important for closer monitoring and an individualized treatment plan.</p>
+                    <h4>Health guidance</h4>
+                    <p>Keep diabetes, blood pressure, and cholesterol care under professional supervision. Healthy habits support overall health but do not replace specialist examination or treatment.</p>
+                    <div class="grade-notice">The ophthalmologist decides whether closer monitoring or treatment is necessary. Surgery is not automatically required.</div>
+                </div>
+            </article>
+
+            <article class="grade-card">
+                <figure class="grade-image">
+                    <img src="assets/about/grade-4.png" alt="Project training fundus image labelled Grade 4">
+                    <figcaption>Grade 4 example from the project's labelled retinal training dataset.</figcaption>
+                </figure>
+                <div class="grade-copy">
+                    <div class="grade-badge"><span>4</span> PROLIFERATIVE DIABETIC RETINOPATHY</div>
+                    <h3>Advanced, sight-threatening disease</h3>
+                    <p>This advanced stage involves abnormal new blood vessels in the retina. These vessels may bleed and can lead to serious complications, including retinal detachment.</p>
+                    <h4>Urgent specialist assessment</h4>
+                    <p>Seek prompt assessment by a qualified ophthalmologist or retinal specialist. Sudden vision loss, a sudden increase in floaters, flashes of light, or a curtain-like shadow requires urgent eye-care assessment.</p>
+                    <h4>Possible treatments</h4>
+                    <p>Depending on the complete clinical examination, treatment may include laser treatment, anti-VEGF injections, or surgery such as vitrectomy.</p>
+                    <div class="grade-notice">Not every Grade 4 patient requires surgery. A qualified eye specialist must choose treatment after examining the patient.</div>
+                </div>
+            </article>
+
+            <section class="healthy-grid">
+                <article class="healthy-card">
+                    <p class="eyebrow">PREVENTION AND DAILY CARE</p>
+                    <h2>Healthy Habits for Protecting Your Eyes</h2>
+                    <ul class="habit-list">
+                        <li>Keep blood glucose within the target range advised by a healthcare professional.</li>
+                        <li>Monitor blood pressure and cholesterol.</li>
+                        <li>Eat a balanced diet with vegetables, fruits in appropriate portions, whole grains, pulses, and other nutritious foods.</li>
+                        <li>Follow an appropriate exercise routine if medically suitable.</li>
+                        <li>Avoid smoking.</li>
+                        <li>Attend regular diabetic retinal examinations.</li>
+                        <li>Take prescribed medicines as directed by a healthcare professional.</li>
+                    </ul>
+                </article>
+                <aside class="healthy-card">
+                    <p class="eyebrow">IMPORTANT LIMIT</p>
+                    <h2>Habits support health; they do not replace treatment</h2>
+                    <p>Healthy food and lifestyle choices support diabetes management, but they cannot reverse existing retinal damage or replace professional eye treatment. No specific food or supplement is a cure for diabetic retinopathy.</p>
+                </aside>
+            </section>
+
+            <section>
+                <header class="grades-heading">
+                    <p class="eyebrow">EXPLAINABLE AI</p>
+                    <h2>How AI Helps in Retinal Screening</h2>
+                </header>
+                <div class="ai-grid">
+                    <article class="ai-card">
+                        <strong>1 · IMAGE ANALYSIS</strong>
+                        <p>An AI model analyzes a retinal image and predicts one of five severity grades, from 0 to 4.</p>
+                    </article>
+                    <article class="ai-card">
+                        <strong>2 · HEATMAP EXPLANATION</strong>
+                        <p>When supported by the current implementation, Grad-CAM may highlight image regions that influenced the model's prediction.</p>
+                    </article>
+                    <article class="ai-card">
+                        <strong>3 · CLINICAL LIMIT</strong>
+                        <p>A heatmap does not prove a lesion is present, and the AI prediction is not always correct.</p>
+                    </article>
+                </div>
+            </section>
+
+            <p class="about-disclaimer">
+                <strong>Screening-support prototype:</strong> This project is not a replacement for a qualified ophthalmologist or a confirmed clinical diagnosis. Results should be interpreted by a healthcare professional.
+            </p>
+
+            <footer class="page-footer">
+                RetinaCare AI · Explainable AI for Diabetic Retinopathy Screening
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
